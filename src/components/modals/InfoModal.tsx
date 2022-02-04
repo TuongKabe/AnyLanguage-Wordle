@@ -8,43 +8,43 @@ type Props = {
 
 export const InfoModal = ({ isOpen, handleClose }: Props) => {
   return (
-    <BaseModal title="How to play" isOpen={isOpen} handleClose={handleClose}>
+    <BaseModal title="Cách chơi" isOpen={isOpen} handleClose={handleClose}>
       <p className="text-sm text-gray-500">
-        Guess the WORDLE in 6 tries. After each guess, the color of the tiles
-        will change to show how close your guess was to the word.
+        Hãy đoán TỪ KHÓA trong 10 lượt thử. Sau mỗi lượt, màu của các ô sẽ
+        thay đổi để cho bạn biết bạn đã đoán gần đúng hay không so với từ khóa.
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
-        <Cell value="W" status="correct" />
-        <Cell value="E" />
-        <Cell value="A" />
-        <Cell value="R" />
-        <Cell value="Y" />
-      </div>
-      <p className="text-sm text-gray-500">
-        The letter W is in the word and in the correct spot.
-      </p>
-
-      <div className="flex justify-center mb-1 mt-4">
-        <Cell value="P" />
-        <Cell value="I" />
-        <Cell value="L" status="present" />
+        <Cell value="Ấ" status="correct" />
+        <Cell value="M" />
+        <Cell value=" " />
+        <Cell value="N" />
         <Cell value="O" />
-        <Cell value="T" />
       </div>
       <p className="text-sm text-gray-500">
-        The letter L is in the word but in the wrong spot.
+        Chữ Ấ đã ở trong vị trí đúng.
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
-        <Cell value="V" />
-        <Cell value="A" />
-        <Cell value="G" />
-        <Cell value="U" status="absent" />
-        <Cell value="E" />
+        <Cell value="Ấ" />
+        <Cell value="M" />
+        <Cell value=" " status="present" />
+        <Cell value="Á" />
+        <Cell value="P" />
       </div>
       <p className="text-sm text-gray-500">
-        The letter U is not in the word in any spot.
+        Dấu cách có xuất hiện trong từ nhưng nằm sai vị trí.
+      </p>
+
+      <div className="flex justify-center mb-1 mt-4">
+        <Cell value="Ấ" />
+        <Cell value="M" />
+        <Cell value=" " />
+        <Cell value="E" status="absent" />
+        <Cell value="O" />
+      </div>
+      <p className="text-sm text-gray-500">
+        Chữ E không nằm trong từ khóa.
       </p>
     </BaseModal>
   )

@@ -8,46 +8,46 @@ type Props = {
 
 export const AboutModal = ({ isOpen, handleClose }: Props) => {
   return (
-    <BaseModal title="About" isOpen={isOpen} handleClose={handleClose}>
+    <BaseModal title="về game" isOpen={isOpen} handleClose={handleClose}>
       <p className="text-sm text-gray-500">
-        This is an open source clone of the game Wordle adapted to{' '}
-        {CONFIG.language} by{' '}
+        Đây là phiên bản mã nguồn mở của tựa game Wordle xây dựng cho{' '}
+        {CONFIG.language} bởi{' '}
         <a href={CONFIG.authorWebsite} className="underline font-bold">
           {CONFIG.author}
         </a>{' '}
-        - check out{' '}
+        - hãy xem{' '}
         <a
           href="https://github.com/hannahcode/wordle"
           className="underline font-bold"
         >
-          the original code
+          mã nguồn gốc
         </a>{' '}
-        by{' '}
+        bởi{' '}
         <a
           href="https://www.hannahmariepark.com/"
           className="underline font-bold"
         >
           Hannah Park
         </a>{' '}
-        or have a look at{' '}
+        hoặc hãy xem{' '}
         <a
           href="https://github.com/roedoejet/AnyLanguage-Wordle"
           className="underline font-bold"
         >
           Aidan Pine's fork
         </a>{' '}
-        and customize it for another language! The words for this Wordle were
-        sourced from{' '}
+        và điều chỉnh nó cho ngôn ngữ khác! Những từ cho Wordle này được
+        lấy từ{' '}
         <a href={CONFIG.wordListSourceLink} className="underline font-bold">
           {CONFIG.wordListSource}
         </a>
-        . Or,
-        {' you can also '}
+        . Ngoài ra,
+        {' bạn cũng có thể chơi '}
         <a
           href="https://www.powerlanguage.co.uk/wordle/"
           className="underline font-bold"
         >
-          play the original here
+          tựa game gốc
         </a>
       </p>
     </BaseModal>
