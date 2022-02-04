@@ -15,9 +15,9 @@ export const Keyboard = ({ onChar, onDelete, onEnter, guesses }: Props) => {
   const charStatuses = getStatuses(guesses)
 
   const onClick = (value: KeyValue) => {
-    if (value === 'ENTER') {
+    if (value === 'HOÀN THÀNH') {
       onEnter()
-    } else if (value === 'DELETE') {
+    } else if (value === 'XÓA') {
       onDelete()
     } else {
       onChar(value)
@@ -26,9 +26,9 @@ export const Keyboard = ({ onChar, onDelete, onEnter, guesses }: Props) => {
 
   useEffect(() => {
     const listener = (e: KeyboardEvent) => {
-      if (e.code === 'Enter') {
+      if (e.code === 'Hoàn thành') {
         onEnter()
-      } else if (e.code === 'Backspace') {
+      } else if (e.code === 'Xóa') {
         onDelete()
       }
       // Take away key event listener for now
@@ -63,7 +63,7 @@ export const Keyboard = ({ onChar, onDelete, onEnter, guesses }: Props) => {
         ))}
       </div>
       <div className="flex justify-center">
-        <Key width={65.4} value="ENTER" onClick={onClick}>
+        <Key width={65.4} value="HOÀN THÀNH" onClick={onClick}>
           Enter
         </Key>
         {ORTHOGRAPHY.slice(
@@ -72,7 +72,7 @@ export const Keyboard = ({ onChar, onDelete, onEnter, guesses }: Props) => {
         ).map((char) => (
           <Key value={char} onClick={onClick} status={charStatuses[char]} />
         ))}
-        <Key width={65.4} value="DELETE" onClick={onClick}>
+        <Key width={65.4} value="XÓA" onClick={onClick}>
           Delete
         </Key>
       </div>
