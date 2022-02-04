@@ -10,8 +10,8 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
   return (
     <BaseModal title="Cách chơi" isOpen={isOpen} handleClose={handleClose}>
       <p className="text-sm text-gray-500">
-        Hãy đoán TỪ KHÓA trong 10 lượt thử. Sau mỗi lượt, màu của các ô sẽ
-        thay đổi để cho bạn biết bạn đã đoán gần đúng hay không so với từ khóa.
+        Hãy đoán TỪ KHÓA trong 10 lượt thử. Sau mỗi lượt, màu của các ô sẽ thay
+        đổi để cho bạn biết bạn đã đoán gần đúng hay không so với từ khóa.
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
@@ -21,9 +21,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
         <Cell value="N" />
         <Cell value="O" />
       </div>
-      <p className="text-sm text-gray-500">
-        Chữ Ấ đã ở trong vị trí đúng.
-      </p>
+      <p className="text-sm text-gray-500">Chữ Ấ đã ở trong vị trí đúng.</p>
 
       <div className="flex justify-center mb-1 mt-4">
         <Cell value="Ấ" />
@@ -43,9 +41,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
         <Cell value="E" status="absent" />
         <Cell value="O" />
       </div>
-      <p className="text-sm text-gray-500">
-        Chữ E không nằm trong từ khóa.
-      </p>
+      <p className="text-sm text-gray-500">Chữ E không nằm trong từ khóa.</p>
     </BaseModal>
   )
 }

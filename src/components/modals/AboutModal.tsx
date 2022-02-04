@@ -36,8 +36,7 @@ export const AboutModal = ({ isOpen, handleClose }: Props) => {
         >
           Aidan Pine's fork
         </a>{' '}
-        và điều chỉnh nó cho ngôn ngữ khác! Những từ cho Wordle này được
-        lấy từ{' '}
+        và điều chỉnh nó cho ngôn ngữ khác! Những từ cho Wordle này được lấy từ{' '}
         <a href={CONFIG.wordListSourceLink} className="underline font-bold">
           {CONFIG.wordListSource}
         </a>
