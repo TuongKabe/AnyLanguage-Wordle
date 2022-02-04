@@ -8,7 +8,7 @@ type Props = {
 
 export const AboutModal = ({ isOpen, handleClose }: Props) => {
   return (
-    <BaseModal title="về game" isOpen={isOpen} handleClose={handleClose}>
+    <BaseModal title="Về game" isOpen={isOpen} handleClose={handleClose}>
       <p className="text-sm text-gray-500">
         Đây là phiên bản mã nguồn mở của tựa game Wordle xây dựng cho{' '}
         {CONFIG.language} bởi{' '}
