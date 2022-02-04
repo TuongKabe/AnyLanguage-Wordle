@@ -8,7 +8,11 @@ type Props = {
 
 export const AboutModal = ({ isOpen, handleClose }: Props) => {
   return (
-    <BaseModal title="Về game" isOpen={isOpen} handleClose={handleClose}>
+    <BaseModal
+      title="Về trò chơi này"
+      isOpen={isOpen}
+      handleClose={handleClose}
+    >
       <p className="text-sm text-gray-500">
         Đây là phiên bản mã nguồn mở của tựa game Wordle xây dựng cho{' '}
         {CONFIG.language} bởi{' '}
@@ -36,7 +40,8 @@ export const AboutModal = ({ isOpen, handleClose }: Props) => {
         >
           Aidan Pine's fork
         </a>{' '}
-        và điều chỉnh nó cho ngôn ngữ khác! Những từ cho Wordle này được lấy từ{' '}
+        và điều chỉnh nó cho ngôn ngữ khác! Những từ cho trò chơi TỪ KHÓA này
+        được lấy từ{' '}
         <a href={CONFIG.wordListSourceLink} className="underline font-bold">
           {CONFIG.wordListSource}
         </a>
@@ -46,7 +51,7 @@ export const AboutModal = ({ isOpen, handleClose }: Props) => {
           href="https://www.powerlanguage.co.uk/wordle/"
           className="underline font-bold"
         >
-          tựa game gốc
+          trò chơi gốc
         </a>
       </p>
     </BaseModal>
