@@ -15,7 +15,7 @@ export const addStatsForCompletedGame = (
 
   stats.totalGames += 1
 
-  if (count > 10) {
+  if (count > 6) {
     // A fail situation
     stats.currentStreak = 0
     stats.gamesFailed += 1

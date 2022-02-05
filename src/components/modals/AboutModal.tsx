@@ -51,7 +51,7 @@ export const AboutModal = ({ isOpen, handleClose }: Props) => {
           href="https://www.powerlanguage.co.uk/wordle/"
           className="underline font-bold"
         >
-          trò chơi gốc
+          trò chơi gốc. Trò chơi này chưa hoàn thiện.
         </a>
       </p>
     </BaseModal>
