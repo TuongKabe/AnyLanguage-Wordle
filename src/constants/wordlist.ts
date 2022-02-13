@@ -6,7 +6,6 @@ export const WORDS = [
   'an trí',
   'an tọa',
   'án thư',
-  'án từ',
   'ảo ảnh',
   'áo mưa',
   'ảo giác',
