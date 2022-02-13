@@ -52,6 +52,7 @@ export const ORTHOGRAPHY = [
   'ầ',
   'ả',
   'ẳ',
+  'ằ',
   'ẩ',
   'ã',
   'ẵ',
