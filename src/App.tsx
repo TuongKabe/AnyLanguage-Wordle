@@ -179,9 +179,12 @@ function App() {
         Về trò chơi này
       </button>
 
-      <Alert message="Không đủ độ dài" isOpen={isNotEnoughLetters} />
-      <Alert message="Từ không hợp lệ" isOpen={isWordNotFoundAlertOpen} />
-      <Alert message={`Từ đó là ${solution}`} isOpen={isGameLost} />
+      <Alert message="Từ đó không đủ độ dài" isOpen={isNotEnoughLetters} />
+      <Alert
+        message="Từ không nẳm trong danh sách hợp lệ"
+        isOpen={isWordNotFoundAlertOpen}
+      />
+      <Alert message={`Từ đó là: ${solution}`} isOpen={isGameLost} />
       <Alert
         message={successAlert}
         isOpen={successAlert !== ''}
