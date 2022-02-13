@@ -3417,6 +3417,7 @@ export const VALIDGUESSES = [
   'yếu thế',
   'yếu tố',
   'ziczac',
+  'bóng gió',
 ]
 
 if (CONFIG.normalization) {
