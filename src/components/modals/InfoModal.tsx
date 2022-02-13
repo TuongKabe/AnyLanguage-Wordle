@@ -10,7 +10,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
   return (
     <BaseModal title="Cách chơi" isOpen={isOpen} handleClose={handleClose}>
       <p className="text-sm text-gray-500">
-        Hãy đoán TỪ KHÓA trong 10 lượt thử. Sau mỗi lượt, màu của các ô sẽ thay
+        Hãy đoán TỪ KHÓA trong 8 lượt thử. Sau mỗi lượt, màu của các ô sẽ thay
         đổi để cho bạn biết bạn đã đoán gần đúng hay không so với từ khóa.
       </p>
 
