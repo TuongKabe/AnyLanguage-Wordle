@@ -5,7 +5,7 @@ export const CONFIG = {
   author: 'VNCT', // Put your name here so people know who made this Wordle!
   authorWebsite: 'https://twitter.com/Ivesecond', // Put a link to your website or social media here
   wordListSource:
-    'Từ điển Tiếng Việt - Gs. Hoàng Phê chủ biên (từ có từ đầu là a, ă, â, x, y, z, ô, ơ và ư) và tratu.soha.vn (cho các từ còn lại)', // Describe the source material for your words here
+    'Từ điển Tiếng Việt - Gs. Hoàng Phê chủ biên (từ có chữ đầu là a, ă, â, x, y, z, ô, ơ và ư) và tratu.soha.vn (cho các từ còn lại)', // Describe the source material for your words here
   wordListSourceLink:
     'http://www.vienngonnguhoc.gov.vn/bai-viet/tai-ban-tu-dien-tieng-viet_575.aspx', // Put a link to the source material for your words here
   //
