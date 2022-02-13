@@ -99,6 +99,7 @@ export const ORTHOGRAPHY = [
   'ữ',
   'ừ',
   'ự',
+  '-',
 ]
 
 if (CONFIG.normalization) {
