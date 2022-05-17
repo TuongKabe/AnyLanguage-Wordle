@@ -45,8 +45,7 @@ export const StatsModal = ({
             <h5>Cập nhật từ mới sau</h5>
             <Countdown
               className="text-lg font-medium text-gray-900"
-              date={tomorrow}
-              daysInHours={true}
+              date={0}
             />
           </div>
           <button
