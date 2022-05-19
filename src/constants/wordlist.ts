@@ -32,7 +32,6 @@ export const WORDS = [
   'ấm sinh',
   'âm sắc',
   'búa gió',
-
   'to tát',
   'xà bần',
   'xe lửa',
